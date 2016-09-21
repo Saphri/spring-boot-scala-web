@@ -7,7 +7,6 @@ scalaVersion := "2.11.8"
 sbtVersion := "0.13.9"
 
 enablePlugins(JavaAppPackaging)
-enablePlugins(TomcatPlugin)
 
 libraryDependencies ++= Seq(
   "org.springframework.boot" % "spring-boot-starter-web" % "1.3.2.RELEASE",
@@ -19,11 +18,4 @@ libraryDependencies ++= Seq(
   "org.hsqldb" % "hsqldb" % "2.3.1",
   "org.springframework.boot" % "spring-boot-starter-tomcat" % "1.3.2.RELEASE" % "provided",
   "javax.servlet" % "javax.servlet-api" % "3.0.1" % "provided"
-)
-
-
-libraryDependencies ++= Seq(
-  "org.apache.tomcat.embed" % "tomcat-embed-core"         % "8.0.30" % "container",
-  "org.apache.tomcat.embed" % "tomcat-embed-logging-juli" % "8.0.30" % "container",
-  "org.apache.tomcat.embed" % "tomcat-embed-jasper"       % "8.0.30" % "container"
 )
