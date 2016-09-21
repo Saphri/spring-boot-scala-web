@@ -6,6 +6,7 @@ scalaVersion := "2.11.8"
 
 sbtVersion := "0.13.9"
 
+enablePlugins(JavaAppPackaging)
 enablePlugins(TomcatPlugin)
 
 libraryDependencies ++= Seq(
